@@ -301,17 +301,14 @@ function createCopyright() {
     ctx.fillStyle = '#000000';
     ctx.font = '22px sans-serif';
     ctx.textAlign = 'end';
-    ctx.fillText('ksenia-k.com', canvas.width - 30, 30);
-    ctx.fillText('codepen.io/ksenia-k', canvas.width - 30, 70);
+    
 
     ctx.lineWidth = 2;
     ctx.beginPath();
     ctx.moveTo(canvas.width - 160, 35);
-    ctx.lineTo(canvas.width - 30, 35);
     ctx.stroke();
     ctx.beginPath();
     ctx.moveTo(canvas.width - 228, 77);
-    ctx.lineTo(canvas.width - 30, 77);
     ctx.stroke();
 
     const texture = new THREE.CanvasTexture(canvas);
